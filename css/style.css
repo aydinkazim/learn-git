@@ -1,5 +1,5 @@
 body{
-    background-color: #ece;
+    background-color: rgb(177, 238, 201);
 }
 
 h1{
@@ -11,4 +11,20 @@ h1{
     font-family: 'Courier New', Courier, monospace;
     font-size: 8em;
     margin:0px;
+}
+
+span{
+    position: relative;
+}
+
+span::after{
+    background-color: #ffe359;
+    content: "";
+    height: 30%;
+    position: absolute;
+    left: 0;
+    margin-left: -1rem;
+    top: 65%;
+    width: calc(100% - 2.75rem);
+    z-index:-1;
 }
